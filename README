@@ -24,6 +24,10 @@ sudo apt install golang-go
 
 vi cons.go
 vi prod.go
+
+go mod download github.com/segmentio/kafka-go
+go mod tidy
+
 go mod download github.com/segmentio/kafka-go
 go mod download github.com/klauspost/compress
 go get github.com/segmentio/kafka-go/compress/zstd@v0.4.20

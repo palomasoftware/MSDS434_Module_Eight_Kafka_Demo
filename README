@@ -1,0 +1,24 @@
+
+
+mkdir kafka
+cd kafka
+curl -o  kafka_2.13-3.4.0.tgz http://dlcdn.apache.org/kafka/3.4.0/kafka_2.13-3.4.0.tgz
+tar -xzf kafka_2.13-3.4.0.tgz
+cd kafka_2.13-3.4.0/
+sudo apt update
+sudo apt install default-jre
+java -version
+
+#### from kafka.apache.org/quickstart
+
+# Start the ZooKeeper service
+bin/zookeeper-server-start.sh config/zookeeper.properties
+# Start the Kafka broker service
+$ bin/kafka-server-start.sh config/server.properties
+$ bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
+
+
+go mod download github.com/segmentio/kafka-go
+go mod download github.com/klauspost/compress
+go get github.com/segmentio/kafka-go/compress/zstd@v0.4.20
+go get github.com/segmentio/kafka-go/compress/snappy@v0.4.20

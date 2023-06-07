@@ -20,7 +20,10 @@ $ bin/kafka-server-start.sh config/server.properties
 bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
 bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
 
+sudo apt install golang-go
 
+vi cons.go
+vi prod.go
 go mod download github.com/segmentio/kafka-go
 go mod download github.com/klauspost/compress
 go get github.com/segmentio/kafka-go/compress/zstd@v0.4.20

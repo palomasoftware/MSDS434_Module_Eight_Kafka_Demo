@@ -29,6 +29,12 @@ go mod download github.com/segmentio/kafka-go
 go mod tidy
 
 go mod download github.com/segmentio/kafka-go
+
+
+
+
+########
+
 go mod download github.com/klauspost/compress
 go get github.com/segmentio/kafka-go/compress/zstd@v0.4.20
 go get github.com/segmentio/kafka-go/compress/snappy@v0.4.20

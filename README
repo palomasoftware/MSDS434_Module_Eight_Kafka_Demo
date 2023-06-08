@@ -25,9 +25,8 @@ sudo apt install golang-go
 vi cons.go
 vi prod.go
 
-go mod download github.com/segmentio/kafka-go
+go mod init kafka-golang
 go mod tidy
 
-go mod download github.com/segmentio/kafka-go
 go run prod.go
 go run cons.go

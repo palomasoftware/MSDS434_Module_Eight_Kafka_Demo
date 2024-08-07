@@ -7,12 +7,13 @@ cd kafka
 # update: 
 curl -o kafka_2.13-3.5.2.tgz  https://dlcdn.apache.org/kafka/3.5.2/kafka_2.13-3.5.2.tgz
 
+curl -o kafka_2.13-3.5.2.tgz  https://dlcdn.apache.org/kafka/3.5.2/kafka_2.13-3.5.2.tgz
+ls
+tar -xzf    kafka_2.13-3.5.2.tgz
 
 
 
-curl -o  kafka_2.13-3.4.0.tgz http://dlcdn.apache.org/kafka/3.4.0/kafka_2.13-3.4.0.tgz
-tar -xzf kafka_2.13-3.4.0.tgz
-cd kafka_2.13-3.4.0/
+cd kafka_2.13-3.5.2/
 sudo apt update
 sudo apt install default-jre
 java -version
@@ -41,6 +42,21 @@ go run cons.go
 
 
 
+
+
+
+
+
+
+
+
+
+##### old versions
+##### old versions - did not download appropriately any more
+
+
+########### curl -o  kafka_2.13-3.4.0.tgz http://dlcdn.apache.org/kafka/3.4.0/kafka_2.13-3.4.0.tgz
+##############tar -xzf kafka_2.13-3.4.0.tgz
 
 #### reference " https://linuxhint.com/apache-kafka-consumer-example-golang/
 

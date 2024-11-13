@@ -8,6 +8,16 @@ cd kafka
 curl -o kafka_2.13-3.5.2.tgz  https://dlcdn.apache.org/kafka/3.5.2/kafka_2.13-3.5.2.tgz
 
 curl -o kafka_2.13-3.5.2.tgz  https://dlcdn.apache.org/kafka/3.5.2/kafka_2.13-3.5.2.tgz
+
+
+
+
+# update 11/12/2024
+# updated version of kakfa: 
+
+ubuntu@ip-172-31-18-71:~/kafka$ curl -o kafka_2.13-3.6.2.tgz     https://dlcdn.apache.org/kafka/3.6.2/kafka_2.13-3.6.2.tgz
+
+
 ls
 tar -xzf    kafka_2.13-3.5.2.tgz
 

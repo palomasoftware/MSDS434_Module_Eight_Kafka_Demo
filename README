@@ -19,11 +19,11 @@ ubuntu@ip-172-31-18-71:~/kafka$ curl -o kafka_2.13-3.6.2.tgz     https://dlcdn.a
 
 
 ls
-tar -xzf    kafka_2.13-3.5.2.tgz
+tar -xzf    kafka_2.13-3.6.2.tgz
 
 
 
-cd kafka_2.13-3.5.2/
+cd kafka_2.13-3.6.2/
 sudo apt update
 sudo apt install default-jre
 java -version
